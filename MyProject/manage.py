@@ -17,6 +17,11 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+    # Import your app's models module
+    from api_basic import models
+
+    execute_from_command_line(sys.argv)
+
 
 if __name__ == '__main__':
     main()
